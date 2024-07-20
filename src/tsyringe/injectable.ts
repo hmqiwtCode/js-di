@@ -5,7 +5,7 @@ export function injectable<T>() {
     container.register(constructor, () => {
       /**
        *  Reflect on the parameter types of class constructors or methods.
-       *  e.g constructor(public logger: Logger) {}  => paramType = [class Logger]
+       *  e.g App constructor(public logger: Logger) {}  => paramType = [class Logger]
        *   class Logger {
        *         log(message) {
        *             console.log("Log:", message);
