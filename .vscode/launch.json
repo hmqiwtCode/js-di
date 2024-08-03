@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/test_framework/test.ts",
+      "outFiles": ["${workspaceFolder}/**/*.js"],
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/ts-node",
+      "args": ["--project", "${workspaceFolder}/tsconfig.json"], // Ensure it uses your tsconfig
+      "console": "integratedTerminal"
+    }
+  ]
+}
